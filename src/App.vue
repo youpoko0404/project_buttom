@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <section class="ftco-about ftco-section" id="about">
+    <section class="ftco-about" id="about">
       <HelloWorld msg="Please select the one you like." />
       <hr />
       <div class="container">
@@ -108,5 +108,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  padding: 3em 0;
 }
+
 </style>
