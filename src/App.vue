@@ -110,5 +110,4 @@ export default {
   text-align: center;
   padding: 3em 0;
 }
-
 </style>
