@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-    <section class="ftco-about img ftco-section" id="about">
+    <section class="ftco-about ftco-section" id="about">
       <HelloWorld msg="Please select the one you like." />
       <hr />
       <div class="container">
         <div class="row d-flex no-gutters">
           <div class="col-md-6 col-lg-6 d-flex">
             <div class="img-about img d-flex align-items-stretch">
-              <div class="overlay"></div>
               <div
                 class="img img-video d-flex align-self-stretch align-items-center"
                 style="background-image:url(./assets/img/1.jpg);"
@@ -40,16 +39,7 @@
       <hr />
       <div class="container">
         <div class="row d-flex no-gutters">
-          <div class="col-md-6 col-lg-6 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
-              <div class="overlay"></div>
-              <div
-                class="img d-flex align-self-stretch align-items-center"
-                style="background-image:url(./assets/img/2.jpg);"
-              ></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 pl-md-5">
+          <div class="col-md-6 col-lg-6 d-flex pl-md-5">
             <div class="heading-section ftco-animate">
               <h2 class="mb-4">Pigkaploy</h2>
               <p></p>
@@ -67,6 +57,14 @@
                 <h1>Score {{total2}}</h1>
                 <CSButton @cc="sum1" />
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div
+                class="img d-flex align-self-stretch align-items-center"
+                style="background-image:url(./assets/img/2.jpg);"
+              ></div>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default {
       counter: 0,
     };
   },
-  
+
   methods: {
     upFunction: function () {
       this.counter += 1;
