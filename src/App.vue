@@ -1,23 +1,77 @@
 <template>
   <div id="app">
-    <HelloWorld msg="เลือกเลยนะครับ" />
-    <hr />
-    <div class="row">
-      <div class="col-6">
-        <img alt="Vue logo" src="./assets/1.jpg" />
-        <h1>{{total1}}</h1>
+    <section class="ftco-about img ftco-section" id="about">
+      <HelloWorld msg="Please select the one you like." />
+      <hr />
+      <div class="container">
+        <div class="row d-flex no-gutters">
+          <div class="col-md-6 col-lg-6 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay"></div>
+              <div
+                class="img img-video d-flex align-self-stretch align-items-center"
+                style="background-image:url(./assets/img/1.jpg);"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 pl-md-5">
+            <div class="heading-section ftco-animate">
+              <h2 class="mb-4">Prayut Chan-o-cha</h2>
+              <p></p>
+              <div class="d-flex w-100">
+                <div
+                  class="img img-about-2 mr-2"
+                  style="background-image: url(./assets/img/pra4.jpg);"
+                ></div>
+                <div
+                  class="img img-about-2 ml-2"
+                  style="background-image: url(./assets/img/pra3.jpg);"
+                ></div>
+              </div>
+              <div class="text">
+                <h1>Score {{total1}}</h1>
+                <CSButton @cc="sum" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-        <img alt="Vue logo" src="./assets/2.jpg" />
-        <h1>{{total2}}</h1>
+      <hr />
+      <hr />
+      <div class="container">
+        <div class="row d-flex no-gutters">
+          <div class="col-md-6 col-lg-6 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay"></div>
+              <div
+                class="img d-flex align-self-stretch align-items-center"
+                style="background-image:url(./assets/img/2.jpg);"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 pl-md-5">
+            <div class="heading-section ftco-animate">
+              <h2 class="mb-4">Pigkaploy</h2>
+              <p></p>
+              <div class="d-flex w-100">
+                <div
+                  class="img img-about-2 mr-2"
+                  style="background-image: url(./assets/img/pink1.jpg);"
+                ></div>
+                <div
+                  class="img img-about-2 ml-2"
+                  style="background-image: url(./assets/img/pink2.jpg);"
+                ></div>
+              </div>
+              <div class="text">
+                <h1>Score {{total2}}</h1>
+                <CSButton @cc="sum1" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-        <CSButton @cc="sum" />
-      </div>
-      <div class="col-6">
-        <CSButton @cc="sum1" />
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -56,7 +110,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
