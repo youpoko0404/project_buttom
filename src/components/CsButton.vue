@@ -1,10 +1,10 @@
 <template>
   <div>
-    <button v-on:click="upFunction" class="btn btn-info ml-3">LIKE {{lable}}</button>
-    <button v-on:click="downFunction" class="btn btn-primary ml-3">DISLIKE {{lable}}</button>
-    <button v-on:click="LoveFunction" class="btn btn-success ml-3">LOVE {{lable}}</button>
-    <button v-on:click="HateFunction" class="btn btn-danger ml-3">HATE{{lable}}</button>
-    <button v-on:click="ResetFunction" class="btn btn-warning ml-3">RESET {{lable}}</button>
+    <button v-on:click="upFunction" class="btn btn-info ml-3">LIKE</button>
+    <button v-on:click="downFunction" class="btn btn-primary ml-3">DISLIKE</button>
+    <button v-on:click="LoveFunction" class="btn btn-success ml-3">LOVE</button>
+    <button v-on:click="HateFunction" class="btn btn-danger ml-3">HATE</button>
+    <button v-on:click="ResetFunction" class="btn btn-warning ml-3">RESET</button>
   </div>
 </template>
 <script>
@@ -14,9 +14,7 @@ export default {
       counter: 0,
     };
   },
-  props: {
-    lable: String,
-  },
+  
   methods: {
     upFunction: function () {
       this.counter += 1;
