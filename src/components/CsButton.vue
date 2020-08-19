@@ -1,8 +1,9 @@
 <template>
   <div>
-    <button v-on:click="upFunction" class="btn btn-primary">LIKE {{lable}}</button>
-    <button v-on:click="downFunction" class="btn btn-success ml-3">LOVE {{lable}}</button>
-    <button v-on:click="LoveFunction" class="btn btn-danger ml-3">DISLIKE {{lable}}</button>
+    <button v-on:click="upFunction" class="btn btn-info ml-3">LIKE {{lable}}</button>
+    <button v-on:click="downFunction" class="btn btn-primary ml-3">DISLIKE {{lable}}</button>
+    <button v-on:click="LoveFunction" class="btn btn-success ml-3">LOVE {{lable}}</button>
+    <button v-on:click="HateFunction" class="btn btn-danger ml-3">HATE{{lable}}</button>
     <button v-on:click="ResetFunction" class="btn btn-warning ml-3">RESET {{lable}}</button>
   </div>
 </template>
@@ -23,11 +24,16 @@ export default {
     },
 
     downFunction: function () {
-      this.counter += 5;
+      this.counter -= 1;
       this.$emit("cc", this.counter);
     },
 
     LoveFunction: function () {
+      this.counter += 10;
+      this.$emit("cc", this.counter);
+    },
+
+    HateFunction: function () {
       this.counter -= 10;
       this.$emit("cc", this.counter);
     },
