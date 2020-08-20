@@ -3,6 +3,7 @@
     <section class="ftco-about" id="about">
       <HelloWorld msg="Please select the one you like." />
       <hr />
+      <!-- select  -->
       <div class="container">
         <div class="row d-flex no-gutters">
           <div class="col-md-6 col-lg-6 d-flex">
@@ -35,8 +36,10 @@
           </div>
         </div>
       </div>
+      <!-- end select  -->
       <hr />
       <hr />
+      <!-- select  -->
       <div class="container">
         <div class="row d-flex no-gutters">
           <div class="col-md-6 col-lg-6 d-flex">
@@ -69,6 +72,7 @@
           </div>
         </div>
       </div>
+      <!-- end select  -->
     </section>
   </div>
 </template>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <button v-on:click="upFunction" class="btn btn-info ml-3">LIKE</button>
-    <button v-on:click="downFunction" class="btn btn-primary ml-3">DISLIKE</button>
-    <button v-on:click="LoveFunction" class="btn btn-success ml-3">LOVE</button>
-    <button v-on:click="HateFunction" class="btn btn-danger ml-3">HATE</button>
-    <button v-on:click="ResetFunction" class="btn btn-warning ml-3">RESET</button>
+    <button v-on:click="upFunction" class="btn btn-info ml-3 mt-2 pl-3 pr-3">LIKE</button>
+    <button v-on:click="downFunction" class="btn btn-primary ml-3 mt-2 pl-3 pr-3">DISLIKE</button>
+    <button v-on:click="LoveFunction" class="btn btn-success ml-3 mt-2 pl-3 pr-3">LOVE</button>
+    <button v-on:click="HateFunction" class="btn btn-danger ml-3 mt-2 pl-3 pr-3">HATE</button>
+    <button v-on:click="ResetFunction" class="btn btn-warning ml-3 mt-2 pl-3 pr-3">RESET</button>
   </div>
 </template>
 <script>
