@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <section class="ftco-about" id="about">
+    <section class="ftco-about img" id="about">
       <HelloWorld msg="Please select the one you like." />
       <hr />
       <div class="container">
@@ -39,7 +39,15 @@
       <hr />
       <div class="container">
         <div class="row d-flex no-gutters">
-          <div class="col-md-6 col-lg-6 d-flex pl-md-5">
+          <div class="col-md-6 col-lg-6 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div
+                class="img d-flex align-self-stretch align-items-center"
+                style="background-image:url(./assets/img/2.jpg);"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 pl-md-5">
             <div class="heading-section ftco-animate">
               <h2 class="mb-4">Pigkaploy</h2>
               <p></p>
@@ -57,14 +65,6 @@
                 <h1>Score {{total2}}</h1>
                 <CSButton @cc="sum1" />
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
-              <div
-                class="img d-flex align-self-stretch align-items-center"
-                style="background-image:url(./assets/img/2.jpg);"
-              ></div>
             </div>
           </div>
         </div>
@@ -108,6 +108,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  padding: 3em 0;
+  padding: 3em;
 }
 </style>
