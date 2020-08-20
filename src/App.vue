@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <section class="ftco-about img" id="about">
+    <section class="ftco-about" id="about">
       <HelloWorld msg="Please select the one you like." />
       <hr />
       <div class="container">
@@ -8,7 +8,7 @@
           <div class="col-md-6 col-lg-6 d-flex">
             <div class="img-about img d-flex align-items-stretch">
               <div
-                class="img img-video d-flex align-self-stretch align-items-center"
+                class="img d-flex align-self-stretch align-items-center"
                 style="background-image:url(./assets/img/1.jpg);"
               ></div>
             </div>
@@ -108,6 +108,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  padding: 3em;
+  padding: 3em 0;
 }
 </style>
